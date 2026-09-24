@@ -1,7 +1,8 @@
 const CONFIG = {
   discord: 'https://discord.gg/TU-INVITACION',
   cfx: 'https://cfx.re/join/TU-CODIGO',
-  connect: 'connect play.bypassrp.com'
+  connect: 'connect play.bypassrp.com',
+  tebexStore: 'https://TU-TIENDA.tebex.io'
 };
 
 const pages = [...document.querySelectorAll('[data-page]')];
@@ -34,6 +35,7 @@ menuToggle?.addEventListener('click', () => {
 
 document.querySelectorAll('[data-link="discord"]').forEach(a => a.href = CONFIG.discord);
 document.querySelectorAll('[data-link="cfx"]').forEach(a => a.href = CONFIG.cfx);
+document.querySelectorAll('[data-link="tebex"]').forEach(a => a.href = CONFIG.tebexStore);
 document.getElementById('connectText').textContent = CONFIG.connect;
 
 document.getElementById('copyConnect')?.addEventListener('click', async () => {
